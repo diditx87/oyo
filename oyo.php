@@ -1,4 +1,5 @@
 <?php
+include('nama.php');
 error_reporting(0);
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -61,7 +62,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, '{
 	"email": "'.generateRandomString(10).'@gmail.com",
 	"id": 0,
 	"idfa": "",
-	"name": "'.generateRandomString(10).'",
+	"name": "'.$nama.','.$nama.'",
 	"phone": "'.$phone_number.'",
 	"push_type": "gcm",
 	"referral_code": "'.$reff.'",
