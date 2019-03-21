@@ -1,5 +1,4 @@
 <?php
-include('nama.php');
 error_reporting(0);
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -48,7 +47,7 @@ echo 'Enter OTP : ';
 $otp = trim(fgets(STDIN)); 
 echo 'Enter refferal : '; 
 $reff = trim(fgets(STDIN)); 
-
+require('nama.php');
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, 'https://api.oyorooms.com/v2/users/new_sign_up?additional_fields=ab_service_data&handset=samsung%2C%20SM-G610F&version=20205&partner_app_version=20205&android_id='.generateRandomString(16).'&idfa=&sid=1551940465205');
