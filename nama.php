@@ -1,4 +1,4 @@
-$nama=array(
+array(
 'Elma',
 'Lailasari',
 'Rina',
