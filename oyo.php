@@ -441,6 +441,7 @@ $otp = trim(fgets(STDIN));
 echo 'Enter refferal : '; 
 $reff = trim(fgets(STDIN)); 
 $random_nama=$nama[mt_rand(0,sizeof($nama)-1)];
+$random_nama2=$nama[mt_rand(0,sizeof($nama)-1)];
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, 'https://api.oyorooms.com/v2/users/new_sign_up?additional_fields=ab_service_data&handset=samsung%2C%20SM-G610F&version=20205&partner_app_version=20205&android_id='.generateRandomString(16).'&idfa=&sid=1551940465205');
@@ -454,7 +455,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, '{
 	"email": "'.generateRandomString(13).'@gmail.com",
 	"id": 0,
 	"idfa": "",
-	"name": "'.$random_nama.' '.$random_nama.'",
+	"name": "'.$random_nama.' '.$random_nama2.'",
 	"phone": "'.$phone_number.'",
 	"push_type": "gcm",
 	"referral_code": "'.$reff.'",
