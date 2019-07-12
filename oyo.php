@@ -409,7 +409,7 @@ $phone_number = trim(fgets(STDIN));
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://api.oyorooms.com/v2/users/generate_otp?phone='.$phone_number.'&nod=4&intent=login&sms_auto_retrieval=true&country_code=%2B1&version=20205&partner_app_version=20205&android_id='.generateRandomString(16).'&idfa=&sid=1551940465205');
+curl_setopt($ch, CURLOPT_URL, 'https://api.oyorooms.com/v2/users/generate_otp?phone='.$phone_number.'&nod=4&intent=login&sms_auto_retrieval=true&country_code=%2B62&version=20205&partner_app_version=20205&android_id='.generateRandomString(16).'&idfa=&sid=1551940465205');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 
